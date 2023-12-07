@@ -1,0 +1,96 @@
+﻿html, head, body, header, div, p,
+nav, ul, li, main, img, svg, figure {
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main {
+    height: 650px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: #E1DBFF !important;
+    border: 2px solid #620C9C !important;
+}
+
+.menu-princ {
+    display: flex;
+    background-color: #C0BFF7 !important;
+    border-bottom: 2px solid #620C9C !important;
+    height: 85px;
+}
+
+.menu-princ img {
+    width: 100%;
+    height: 100%;
+    margin-top: -35px;
+}
+
+.imagem {
+    display: flex;
+    height: 70px;
+    width: 155px;
+    margin-top: 40px;
+    padding-left: 5px;
+}
+
+.menu-princ h1 {
+    margin: 6px auto;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #620C9C !important;
+}
+
+.menu-info {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 10px;
+    display: flex;
+}
+
+.menu-info2 {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.menu-info2 h4 {
+    color: #620C9C !important;
+    margin-top: 16px;
+}
+
+.menu-info2 p {
+    padding-right: 30px;
+    margin-top: 16px;
+}
+
+.titulo-procedimento {
+    margin-top: 70px;
+    text-align: center;
+}
+
+    .titulo-procedimento h2 {
+        text-decoration: underline #620C9C !important;
+    }
+
+.info-baixo {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.info-baixo h4 {
+    font-size: 20px;
+}

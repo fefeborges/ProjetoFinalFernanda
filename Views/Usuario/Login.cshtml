@@ -1,0 +1,32 @@
+﻿@model ProjetoFinalFernanda.Models.Usuario
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/login.css">
+<div class="text-center">
+    <div class="menu">
+        <div class="imagem">
+            <img src="~/img/logoclinica.png" alt="">
+        </div>
+    </div>
+    <form class="box" asp-action="Login">
+        <h1>LOGIN</h1>
+        <div class="box2">
+            <div class="item">
+                <label asp-for="UsuarioEmail"></label>
+                <input asp-for="UsuarioEmail" />
+                <span asp-validation-for="UsuarioEmail"></span>
+            </div>
+            <div class="item">
+                <label asp-for="UsuarioSenha"></label>
+                <input asp-for="UsuarioSenha" type="password" />
+                <span asp-validation-for="UsuarioSenha"></span>
+            </div>
+            <h4>@ViewBag.Mensagem</h4>
+            <div>
+                <input class="btn" type="submit" value="Entrar" />
+            </div>
+        </div>
+
+    </form>
+</div>

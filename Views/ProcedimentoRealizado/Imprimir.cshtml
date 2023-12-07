@@ -1,0 +1,36 @@
+﻿@model ProjetoFinalFernanda.Models.ProcedimentoRealizado
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/imprimir.css">
+<div class="main">
+    <div class="menu-princ">
+        <div class="imagem">
+            <img src="~/img/logoclinica.png" alt="">
+        </div>
+        <h1>CLÍNICA</h1>
+    </div>
+    <div class="menu-info">
+        <div class="item">
+            <h4>Cliente: </h4><p>@Html.DisplayFor(model => model.Cliente.ClienteNome)</p>
+        </div>
+        <div class="item">
+            <h4>Sexo: </h4><p>@Html.DisplayFor(model => model.Cliente.ClienteSexo)</p>
+        </div>
+        <div class="item">
+            <h4>CPF: </h4><p>@Html.DisplayFor(model => model.Cliente.ClienteCpf)</p>
+        </div>
+    </div>
+    <div class="menu-info2">
+        <h4>@Html.DisplayNameFor(model => model.DataRealizacao):</h4><p>@Html.DisplayFor(model => model.DataRealizacao)</p>
+        <h4>@Html.DisplayNameFor(model => model.Colaborador):</h4><p>@Html.DisplayFor(model => model.Colaborador.ColaboradorNome)</p>
+    </div>
+    <div class="titulo-procedimento">
+        <h2>@Html.DisplayNameFor(model => model.Procedimento)</h2><p> @Html.DisplayFor(model => model.Procedimento.ProcedimentoNome)</p>
+        <h2>@Html.DisplayNameFor(model => model.Procedimento.TipoProcedimento)</h2><p> @Html.DisplayFor(model => model.Procedimento.TipoProcedimento.TipoProcedimentoNome)</p>
+    </div>
+    <hr>
+    <div class="info-baixo">
+        <h4>@Html.DisplayNameFor(model => model.Procedimento.ProcedimentoObservacao):</h4><span>@Html.DisplayFor(model => model.Procedimento.ProcedimentoObservacao)</span>
+    </div>
+</div>
